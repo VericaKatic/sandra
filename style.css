@@ -35,18 +35,22 @@ body, html {
 
 .nav {width:95%;
 height:10%;
-position:fixed;
-background-color: rgb(22, 2, 2);
+position:absolute;
 color:red;
 top:10px;
 columns:3;
 align-items: center;
 font-size:35px;
-padding-top: 15px;
-padding-bottom: 20px;
 border:double orange;
-margin-left: 35px;
 outline:auto;
+display:flex;
+margin: 0 auto;
+justify-content:space-around;
+gap:250px;
+margin-left: 35px;
+background-color: rgb(22, 2, 2);
+z-index: 0;
+
 
 }
 
@@ -60,8 +64,7 @@ flex-direction: row;
 
 }
 
-.prvi {
-  margin:0 auto;}
+
 
   a
    {color:red;}
@@ -116,6 +119,8 @@ flex-direction: row;
    margin:0 auto;
    margin-top: 13%;
    background:radial-gradient(orange, red);
+   display:flex;
+   justify-content: center;
   
    
 
@@ -139,6 +144,7 @@ flex-direction: row;
   justify-self: center;
   font-weight: bolder;
   vertical-align: middle;
+  justify-content: center;
 
   
 
@@ -199,15 +205,59 @@ background-color: blanchedalmond;}
 
 
 @media  screen and (max-width: 400px) {
-  .column, .linkovi, .kontakt, .osandri, .nav {
-    flex: 70%;
-    max-width: 70%;
+  .column {
+    display:grid;
+    flex:100%;
+    justify-content: center;
+    max-width:100%;
+  }
+}
+
+@media  screen and (max-width: 400px) {
+  .kontakt  {
+    display:grid;
+    flex:100%;
+    justify-content:center;
+    max-width:100%;
+  }
+}
+@media screan and (max-width:400px)
+ {.nav {
+
+  display:grid;
+  flex:50%;
+  margin:0 auto;
+  position:absolute;
+  
+} }
+
+
+@media screen and (max-width:400px) {
+  .hero-image background-image {
+    object-fit: cover;
+    width:100%;
+    margin: 0 auto;
+  
+
+
+  }
+}
+
+@media screen and (max-width:400px) {
+
+  .osandri {width:100%;
+    display:grid;
+    position: absolute;
+
+    
   }
 }
 
 
-@media only screen and (max-width:400px) {
-  .hero-image background-image {width:100%;
-    object-fit: cover;
+
+@media  screen and (max-width: 400px) {
+  .hero-text {
+    
+    font-size: 40px;
   }
 }
